@@ -34,7 +34,7 @@ $("#circle").css({"left": "150px"}).delay(1000).animate({"left":"+=100vw"},"slow
 
 
 // $("#up").click(function(){
-    $("#up").animate({letterSpacing: '50px', fontSize: '6em', color: 'red'}, "slow");
+    $("#up").animate({"letterSpacing": '30px', "fontSize": '6em', "color": 'red'}, "slow");
      // $("#list1").animate({fontSize: '3em'}, "slow");
 // }); 
  $("#yahoo").css({
@@ -48,35 +48,37 @@ $("#circle").css({"left": "150px"}).delay(1000).animate({"left":"+=100vw"},"slow
       
   // });
 
-$("#middle").click(function(){
+// $("#middle").click(function(){
     $("#middle").slideUp( 300 ).fadeIn( 400 );
 
-});
+// });
 
 
 $("#stop_everything").css({"top": "50px",
      "left": "200px",
      "font-size": "45px",
-     "position": "absolute", 
-});
+     "position": "absolute",
+
+    }).animate({"height": '+=150'}, "slow");
 
 
  $("#stop_everything").click(function(){
     $("body").hide(1000);
+
+
+ // not working
+ // var timer = setInterval( 1000000000000);
+    
+ // clearInterval(function() { //clear interval
+ //  }, 999999000);
+
+
+
  });
 
 
-   /* Act on the event */
-
- 
 
 
-
-
-// stop everything
-// $( "p" ).click(function( event ) {
-//   event.stopPropagation();
-//   // Do something
 // });
 
 
@@ -84,6 +86,10 @@ $("#stop_everything").css({"top": "50px",
 
 // ------end of setinterval wrapper
  }, 1000); // every 1000 ms
+
+
+
+
 
 
   // bottom of document ready 
