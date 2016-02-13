@@ -1,0 +1,39 @@
+#dropbox, #top {
+   padding: 10px;
+   text-align: center;
+   background-color: tan;
+}
+      
+#dropbox {
+   padding: 70px;
+  display: none;
+  background-color: yellow;        
+}
+
+#hello {
+  text-align:  center;
+  font-size: 100px;
+  color:rgba(112, 182, 139, 1);
+}
+  
+#circle {
+  background-color: green;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  margin-top: none;
+}
+
+#yahoo:hover{
+  border-style: solid;
+      border-width: 1px;
+      display: block;
+      width:600px;
+      height: 300px;
+      background-color: rgba(112, 182, 139, .5);
+      -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+      transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
