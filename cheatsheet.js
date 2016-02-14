@@ -91,8 +91,28 @@ $(document).ready(function() {
         //             lineHeight
         // --------    textIndent
 
-More examples of snyntax
+ // ________________________________________________
+        
+// making a circle move across page with a delay  
+// $("#circle").css({"left": "150px", -- start position
+//              "top": "400px",
+//             "position": "absolute",    ----
+//             "background-color": "green", ----color circle
+//             "border-radius": "50%",   ---turns element to circle
+//             "width": "200px",        -----set size if circle
+//             "height": "200px",       
+//             "margin-top": "none"
+
+//            })
+//            .delay(1000).animate({"left":"+=100vw"},"slow");
+
+// ____________________________________________________
+
+
+
+// More examples of snyntax
 // -----------------
+
 // stop() Method--method is used to stop an animation or effect before it is finished.
 
 // $("#stop").click(function(){

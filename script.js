@@ -3,17 +3,49 @@ $(document).ready(function() {
 // use set interval to repeat  everything
 setInterval(function() {
             // code to be repeated
-     
+ $("#top").css({
+           "padding": "10px",
+           "text-align": "center",
+           "background-color": "tan",
+        });    
 
 // $("#top").click(function(){
-        $("#dropbox").slideToggle("slow");
+        $("#dropbox").css({
+           "padding": "10px",
+           "text-align": "center",
+           "background-color": "tan",
+            "padding": "70px",
+            "display": "none",
+            "background-color": "yellow"
+        })
+                      .slideToggle("slow");
     // });
 
 // $("#end").click(function(){
-    $("#end").hide();
+    $("#end") .css({
+            "top": "400px",
+            // "position": "absolute",
+            "background-color": "red",
+             "font-size": "40px"})
+            // .hide()
+
+            .delay(1000)
+            .scrollLeft( 300 )
+            .slideDown('slow');
+            
     // });
 
-$("#circle").css({"left": "150px"}).delay(1000).animate({"left":"+=100vw"},"slow");
+$("#circle").css({"left": "150px",
+            "top": "400px",
+            "position": "absolute",
+            "background-color": "green",
+            "border-radius": "50%",
+            "width": "200px",
+            "height": "200px",
+            "margin": "40px"
+
+           })
+           .delay(1000).animate({"left":"+=100vw"},"slow");
 
 // $("#first-div").click(function(){
     $("#first-paragraph").slideUp();
@@ -21,10 +53,15 @@ $("#circle").css({"left": "150px"}).delay(1000).animate({"left":"+=100vw"},"slow
 
 // $("#hello").click(function(){
                         
-  $("#hello").animate({fontSize: "80px", opacity: 0.25,
-    left: "+=50"});
+  $("#hello").css({ "text-align":  "center",
+                    "font-size": "100px",
+                    "color":"rgba(112, 182, 139, 1"})
+            .animate({fontSize: "80px", opacity: 0.25,
+            left: "+=50"});
                                        
     // });
+
+
 
 // $("#list1").click(function(){
     $("#list1").css({ "left": "300px","text-align": "center" })
@@ -39,8 +76,19 @@ $("#circle").css({"left": "150px"}).delay(1000).animate({"left":"+=100vw"},"slow
 // }); 
  $("#yahoo").css({
    'fontsize': '50px',
-   'text-align': "center"
- });
+   'text-align': "center",
+      "border-style": "solid",
+       "border-width": "20px",
+       "display": "block",
+       "width":"600px",
+       "height": "300px",
+       "background-color": "rgba(112, 182, 139, .5)"
+    })
+    .delay(4000) 
+    .animate({"left": "300px", 
+    "text-align": "right" }, "slow");
+
+
  $("img").hide();
 
   // $(".showimg").click(function(){
